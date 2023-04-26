@@ -1,0 +1,136 @@
+.element {
+    width: 100%;
+    height: 630px;
+    align-items: center;
+    border-radius: 0px;
+    border: 0.7px solid rgba(48, 47, 46, 0.7);
+    margin: 0;
+    padding: 0;
+}
+
+.element__photo {
+    width: 288px;
+    height: 321px;
+    border-radius: 0px;
+    margin: 12px 0 0;
+}
+
+.element__body {
+    width: 288px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.element__title {
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+    margin: 0;
+}
+
+.element__about-star {
+    width: 100%;
+    height: 70px;
+    margin: 0 0 14px;
+}
+
+.element__about-star_type_photo {
+    width: 70px;
+    height: 70px;
+}
+
+.element__about-star_type_info {
+    margin: 0px 0px 0px 8px;
+    width: 210px;
+}
+
+.element__about-star_type_name {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    margin: 0;
+    width: 210px;
+}
+
+.element__about-star_type_verification {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(255, 153, 0, 1);
+    margin: 0;
+    max-width: 90px;
+}
+
+.element__about-star_type_icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 6px;
+}
+
+.element__feature {
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 9px;
+}
+
+.element__feature-property {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    max-width: 100px;
+}
+
+.element__feature-value {
+    display: block;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 193, 7, 1);
+    border-image-slice: 1;
+    text-align: center;
+    align-items: center;
+}
+
+.element__feature-value_yellow {
+    background-color: #FDD446;
+    width: 110px;
+    border: none;
+}
+
+.element__button {
+    width: 265px;
+    height: 53px;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 1);
+    border: none;
+    align-items: center;
+    background: linear-gradient(90deg, #FDD446 0%, #F79B47 100%);
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 auto;
+}

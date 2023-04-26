@@ -1,0 +1,63 @@
+.header {
+    margin: 0 auto;
+    max-width: 1416px;
+    align-items: center;
+    padding: 18px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 222px;
+    height: 103px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__form {
+    width: 575px;
+    height: 60px;
+    margin: 0 180px 0 0;
+    box-sizing: border-box;
+    border-radius: 57.59px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.header__form-button {
+    background-image: url(../Images/значокпоиска.svg);
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__form-input {
+    max-width: 473px;
+    border: none;
+    padding: 0;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.header__button {
+    width: 190px;
+    height: 60px;
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 1);
+    margin: 0;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+}
+
+.header__button_type_yellow {
+    border: none;
+    background-color: #FDD446;
+}

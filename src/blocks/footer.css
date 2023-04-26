@@ -1,0 +1,84 @@
+.footer {
+    background-color: #FDD446;
+    min-height: 399px;
+    width: 100%;
+    position: relative;
+}
+
+.footer__nav {
+    justify-content: space-between;
+    max-width: 1416px;
+    margin: 0 auto;
+    padding: 37px 64px 44px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.footer__nav-info {
+    padding: 0;
+}
+
+.footer__logo {
+    width: 116px;
+    margin: 0 0 14px;
+}
+
+.footer__nav-info-text {
+    padding: 0;
+    margin: 0 0 7px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer__list {
+    display: flex;
+    margin: 34px 0 0;
+    justify-content: space-between;
+    max-width: 85px;
+}
+
+.footer-social-ico {
+    width: 30px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 570px);
+}
+
+.footer__title {
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.footer__star {
+    width: 128px;
+    height: 138px;
+    position: absolute;
+    left: 45.44%;
+    bottom: 3.5%;
+    z-index: 1;
+}
+
+.footer__copyright {
+    max-width: 1416px;
+    text-align: end;
+    margin: 20px auto 0;
+    padding: 0;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}

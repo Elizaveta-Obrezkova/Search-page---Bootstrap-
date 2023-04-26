@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@700&family=Rubik:ital,wght@0,300;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="stylesheet" href="./index.css"> -->
+</head>
+
+<body class="page">
+    <header class="container-lg row header">
+        <img class="header__logo" src="<%=require('./Images/лого.svg')%>" alt="Логотип компании">
+        <form class="row header__form">
+            <button type="submit" class="btn header__form-button"></button>
+            <input type="text" class="form-control header__form-input" id="exampleInputPassword1"
+                placeholder="Поиск...">
+        </form>
+        <button class="btn btn-outline-warning header__button" type="button">Вход</button>
+        <button class="btn btn-primary header__button header__button_type_yellow" type="button">Регистрация</button>
+    </header>
+    <main class="container-lg page__main-container">
+        <div class="row" style=" margin: 50px 0 0; justify-content: space-between; align-items: center;">
+            <div class="dropdown" style="width: 155px; padding: 0;">
+                <button class=" row btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="padding: 0; margin: 0; width: 155px;">
+                    <p
+                        style="color: #000000; padding: 0; margin: 0; display: inline-block; max-width: 120px; text-align: start;">
+                        Фильтры</p>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <p class="dropdown-item">Категории</p>
+                    </li>
+                    <li>
+                        <p class="dropdown-item">Типы файлов</p>
+                    </li>
+                    <li>
+                        <p class="dropdown-item">Типы продаж</p>
+                    </li>
+                </ul>
+            </div>
+            <form class="row" style=" 
+              width: 326px; 
+              margin: 0;
+              height: 40px; 
+              box-sizing: border-box; 
+              border-radius:57.59px; 
+              border: 1px solid rgba(0, 0, 0, 0.5); 
+              align-items: center;">
+                <button type="submit" class="btn" style="
+                  background-image: url(./Images/значокпоиска.svg); 
+                  width: 18px; 
+                  height: 18px; 
+                  background-position: 
+                  center; background-repeat: 
+                  no-repeat;"></button>
+                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Поиск..." style="max-width: 206px; 
+                  border: none; padding: 0;">
+            </form>
+
+            <div class="dropdown" style="width: 207px; margin: 0; padding: 0;">
+                <button class=" row btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="padding: 0; margin: 0; width: 207px; border-radius: 10px; color: 
+                rgba(253, 212, 70, 1); border-color: rgba(0, 0, 0, 0.5);">
+                    <p
+                        style="color: #000000; padding: 0; margin: 0; display: inline-block; max-width: 171px; text-align: start;">
+                        По умолчанию</p>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <ul class="container-lg list-group elements">
+
+        </ul>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination" style="width: 270px; margin: 30px auto 81px; justify-content: space-between;">
+                <li class="page-item border-0">
+                    <a class="page-link border-0" style="font-family: 'Istok Web';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 38px;
+                    color: #000000;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    ">&laquo;</a>
+                </li>
+                <li class="page-item border-0"><a class="page-link border-0" style="font-family: 'Istok Web';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 38px;
+                color: #000000;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                background-color: #FDD446;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                " href="#">1</a></li>
+                <li class="page-item border-0"><a class="page-link border-0" style="font-family: 'Istok Web';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 38px;
+                color: #000000;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                " href="#">2</a></li>
+                <li class="page-item border-0"><a class="page-link border-0" style="font-family: 'Istok Web';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 38px;
+                color: #000000;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                " href="#">3</a></li>
+                <li class="page-item" border-0><a class="page-link border-0" style="font-family: 'Istok Web';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 38px;
+                color: #000000;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                " href="#">4</a></li>
+                <li class="page-item border-0"><a class="page-link border-0" style="font-family: 'Istok Web';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 38px;
+                color: #000000;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+                " href="#">5</a></li>
+                <li class="page-item border-0">
+                    <a class="page-link border-0" style="font-family: 'Istok Web';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 38px;
+                    color: #000000;
+                    margin: 0;
+                padding: 0;
+                text-align: center;
+                    " href="#">&raquo;</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <footer class="footer">
+        <div class="row row-cols-4 footer__nav">
+            <div class="col mobile-foot footer__nav-info">
+                <img src="<%=require('./Images/footer-logo-dark.svg')%>" class="footer__logo" alt="">
+                <div class="nav flex-column">
+                    <p class="footer__nav-info-text">Россия, г. Москва, 119002</p>
+                    <p class="footer__nav-info-text">ул. Арбат 51/1/8А</p>
+                    <p class="footer__nav-info-text">e-mail: <span>info@lionmax.ru</span></p>
+                    <ul class="footer__list list-unstyled ">
+                        <li><a class="text-muted" href="#"><img src="<%=require('./Images/twitter-3 1.svg')%>" class="footer-social-ico"></a>
+                        </li>
+                        <li><a class="text-muted" href="#"><img src="<%=require('./Images/image 3.svg')%>" class="footer-social-ico"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="foot" style="display:flex; justify-content: space-between;">
+                <div class="col">
+                    <h5 class="footer__title">NFT</h5>
+                    <ul class="nav flex-column">
+                        <li class=" mb-2"><a href="*"
+                                class="nav-link p-0 footer__nav-info-text">Что такое NFT</a>
+                        </li>
+                        <li class=" mb-2"><a href="*"
+                                class="nav-link p-0 footer__nav-info-text">Создайте NFT с нами</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="footer__title">Компания</h5>
+                    <ul class="nav flex-column">
+                        <li class=" mb-2"><a href="*"
+                                class="nav-link p-0  footer__nav-info-text">О нас</a></li>
+                        <li class=" mb-2"><a href="*" class="nav-link p-0 footer__nav-info-text">Отправить запрос</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h5 class="footer__title">Другое</h5>
+                    <ul class="nav flex-column">
+                        <li class=" mb-2"><a href="*" class="nav-link p-0 footer__nav-info-text"
+                                style="white-space: nowrap;">Условия использования</a>
+                        </li>
+                        <li class=" mb-2"><a href="*"
+                                class="nav-link p-0 footer__nav-info-text">Политика конфиденциальности</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="<%=require('./Images/footer-star.svg')%>" class="footer__star" alt="">
+        <p class="footer__copyright">@ tnft.ru Company, Inc</p>
+    </footer>
+
+    <template id="element-template">
+        <div class="card element">
+            <img class="card-img-top element__photo">
+            <div class="card-body element__body">
+                <h5 class="card-title element__title"></h5>
+                <div class="card border-0 element__about-star">
+                    <div class="row g-0">
+                        <img class="col-md-4 img-fluid element__about-star_type_photo rounded-0">
+                        <div class="col-md-8 element__about-star_type_info">
+                            <div class="card-body" style="padding: 0px; max-width: 146px;">
+                                <h5 class="card-title element__about-star_type_name"></h5>
+                                <div class="row g-0" style="align-items: center;">
+                                    <p class="card-text element__about-star_type_verification">проверено</p>
+                                    <img src="<%=require('./Images/image 8.svg')%>" alt="Проверено"
+                                        class="element__about-star_type_icon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row element__feature">
+                    <p class="card-text element__feature-property">Редкость:</p>
+                    <p class="card-text element__feature-value element__feature-value_type_rarity"></p>
+                </div>
+                <div class="row element__feature">
+                    <p class="card-text element__feature-property">Цена:</p>
+                    <p
+                        class="card-text element__feature-value element__feature-value_yellow element__feature-value_type_price">
+                    </p>
+                </div>
+                <button class="btn btn-primary element__button" type="button">Купить</button>
+            </div>
+        </div>
+    </template>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <!-- <script type="module" src="./index.js"></script> -->
+</body>
+
+</html>
