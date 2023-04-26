@@ -1,0 +1,317 @@
+/*!*********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/page.css ***!
+  \*********************************************************************************************************************************************/
+.page__main-container {
+    max-width: 1416px;
+    margin: 60px auto 0;
+    padding: 0;
+}
+/*!***********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/header.css ***!
+  \***********************************************************************************************************************************************/
+.header {
+    margin: 0 auto;
+    max-width: 1416px;
+    align-items: center;
+    padding: 18px 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 222px;
+    height: 103px;
+    margin: 0;
+    padding: 0;
+}
+
+.header__form {
+    width: 575px;
+    height: 60px;
+    margin: 0 180px 0 0;
+    box-sizing: border-box;
+    border-radius: 57.59px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    align-items: center;
+}
+
+.header__form-button {
+    background-image: url(images/%D0%B7%D0%BD%D0%B0%D1%87%D0%BE%D0%BA%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%D0%B0.svg);
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__form-input {
+    max-width: 473px;
+    border: none;
+    padding: 0;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.header__button {
+    width: 190px;
+    height: 60px;
+    border-radius: 30px;
+    color: rgba(0, 0, 0, 1);
+    margin: 0;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    align-items: center;
+}
+
+.header__button_type_yellow {
+    border: none;
+    background-color: #FDD446;
+}
+/*!*************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/elements.css ***!
+  \*************************************************************************************************************************************************/
+.elements {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 312px);
+    gap: 50px 56px;
+    padding: 0;
+    list-style: none;
+    margin: 40px 0 0;
+}
+/*!************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/element.css ***!
+  \************************************************************************************************************************************************/
+.element {
+    width: 100%;
+    height: 630px;
+    align-items: center;
+    border-radius: 0px;
+    border: 0.7px solid rgba(48, 47, 46, 0.7);
+    margin: 0;
+    padding: 0;
+}
+
+.element__photo {
+    width: 288px;
+    height: 321px;
+    border-radius: 0px;
+    margin: 12px 0 0;
+}
+
+.element__body {
+    width: 288px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.element__title {
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 50px;
+    color: #000000;
+    margin: 0;
+}
+
+.element__about-star {
+    width: 100%;
+    height: 70px;
+    margin: 0 0 14px;
+}
+
+.element__about-star_type_photo {
+    width: 70px;
+    height: 70px;
+}
+
+.element__about-star_type_info {
+    margin: 0px 0px 0px 8px;
+    width: 210px;
+}
+
+.element__about-star_type_name {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #000000;
+    margin: 0;
+    width: 210px;
+}
+
+.element__about-star_type_verification {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(255, 153, 0, 1);
+    margin: 0;
+    max-width: 90px;
+}
+
+.element__about-star_type_icon {
+    width: 20px;
+    height: 20px;
+    margin: 0 0 0 6px;
+}
+
+.element__feature {
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 9px;
+}
+
+.element__feature-property {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    max-width: 100px;
+}
+
+.element__feature-value {
+    display: block;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    width: 130px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 193, 7, 1);
+    border-image-slice: 1;
+    text-align: center;
+    align-items: center;
+}
+
+.element__feature-value_yellow {
+    background-color: #FDD446;
+    width: 110px;
+    border: none;
+}
+
+.element__button {
+    width: 265px;
+    height: 53px;
+    border-radius: 20px;
+    color: rgba(0, 0, 0, 1);
+    border: none;
+    align-items: center;
+    background: linear-gradient(90deg, #FDD446 0%, #F79B47 100%);
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 auto;
+}
+/*!***********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/blocks/footer.css ***!
+  \***********************************************************************************************************************************************/
+.footer {
+    background-color: #FDD446;
+    min-height: 399px;
+    width: 100%;
+    position: relative;
+}
+
+.footer__nav {
+    justify-content: space-between;
+    max-width: 1416px;
+    margin: 0 auto;
+    padding: 37px 64px 44px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.footer__nav-info {
+    padding: 0;
+}
+
+.footer__logo {
+    width: 116px;
+    margin: 0 0 14px;
+}
+
+.footer__nav-info-text {
+    padding: 0;
+    margin: 0 0 7px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.footer__list {
+    display: flex;
+    margin: 34px 0 0;
+    justify-content: space-between;
+    max-width: 85px;
+}
+
+.footer-social-ico {
+    width: 30px;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 570px);
+}
+
+.footer__title {
+    font-family: 'Istok Web';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.footer__star {
+    width: 128px;
+    height: 138px;
+    position: absolute;
+    left: 45.44%;
+    bottom: 3.5%;
+    z-index: 1;
+}
+
+.footer__copyright {
+    max-width: 1416px;
+    text-align: end;
+    margin: 20px auto 0;
+    padding: 0;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.5);
+}
+/*!***************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/index.css ***!
+  \***************************************************************************************************************************************/
+
+
