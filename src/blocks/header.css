@@ -61,3 +61,71 @@
     border: none;
     background-color: #FDD446;
 }
+
+.header__button-burger {
+    width: 30px;
+    height: 12px;
+    border: none;
+    display: none;
+    background-image: url('../Images/бургер.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media screen and (max-width: 1512px) {
+    .header {
+        max-width: 708px;
+    }
+
+    .header__logo {
+        width: 128px;
+        height: 59px;
+    }
+
+    .header__form {
+        width: 264px;
+        height: 40px;
+        margin: 0 4px 0 2px;
+    }
+
+    .header__form-button {
+        width: 18px;
+        height: 18px;
+    }
+
+    .header__form-input {
+        max-width: 200px;
+        font-size: 18px;
+    }
+
+    .header__button {
+        width: 140px;
+        height: 40px;
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        max-width: 288px;
+        padding: 10px 0 0;
+    }
+
+    .header__logo {
+        width: 136px;
+        height: 65px;
+    }
+
+    .header__form {
+        display: none;
+    }
+
+    .header__button {
+        display: none;
+    }
+
+    .header__button-burger {
+        display: block;
+    }
+}

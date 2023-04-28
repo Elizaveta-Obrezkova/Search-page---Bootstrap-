@@ -7,3 +7,19 @@
     list-style: none;
     margin: 40px 0 0;
 }
+
+@media screen and (max-width: 1512px) {
+    .elements {
+        grid-template-columns: repeat(3, 216px);
+        gap: 30px;
+        margin: 35px 0 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .elements {
+        grid-template-columns: repeat(2, 136px);
+        gap: 20px 16px;
+        margin: 20px 0 0;
+    }
+}

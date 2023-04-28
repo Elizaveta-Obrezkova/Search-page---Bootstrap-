@@ -3,3 +3,16 @@
     margin: 60px auto 0;
     padding: 0;
 }
+
+@media screen and (max-width: 1512px) {
+    .page__main-container {
+        max-width: 708px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page__main-container {
+        max-width: 288px;
+        margin: 30px auto 0;
+    }
+}
