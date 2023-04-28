@@ -25,15 +25,13 @@
         </form>
         <button class="btn btn-outline-warning header__button" type="button">Вход</button>
         <button class="btn btn-primary header__button header__button_type_yellow" type="button">Регистрация</button>
+        <button class="btn rounded-0 header__button-burger" type="button"></button>
     </header>
-    <main class="container-lg page__main-container">
-        <div class="row" style=" margin: 50px 0 0; justify-content: space-between; align-items: center;">
-            <div class="dropdown" style="width: 155px; padding: 0;">
-                <button class=" row btn btn-outline-warning dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false" style="padding: 0; margin: 0; width: 155px;">
-                    <p
-                        style="color: #000000; padding: 0; margin: 0; display: inline-block; max-width: 120px; text-align: start;">
-                        Фильтры</p>
+    <main class="container-lg page__main-container ">
+        <div class="row search-container">
+            <div class="dropdown  search-container__filters">
+                <button class=" row btn btn-outline-warning dropdown-toggle search-container__filters-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <p class="search-container__filters-title">Фильтры</p>
                 </button>
                 <ul class="dropdown-menu">
                     <li>
@@ -47,32 +45,14 @@
                     </li>
                 </ul>
             </div>
-            <form class="row" style=" 
-              width: 326px; 
-              margin: 0;
-              height: 40px; 
-              box-sizing: border-box; 
-              border-radius:57.59px; 
-              border: 1px solid rgba(0, 0, 0, 0.5); 
-              align-items: center;">
-                <button type="submit" class="btn" style="
-                  background-image: url(./Images/значокпоиска.svg); 
-                  width: 18px; 
-                  height: 18px; 
-                  background-position: 
-                  center; background-repeat: 
-                  no-repeat;"></button>
-                <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Поиск..." style="max-width: 206px; 
-                  border: none; padding: 0;">
+            <form class="row search-container__form">
+                <button type="submit" class="btn search-container__form-button"></button>
+                <input type="text" class="form-control search-container__form-input" id="exampleInputPassword1" placeholder="Поиск...">
             </form>
 
-            <div class="dropdown" style="width: 207px; margin: 0; padding: 0;">
-                <button class=" row btn btn-outline-dark dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false" style="padding: 0; margin: 0; width: 207px; border-radius: 10px; color: 
-                rgba(253, 212, 70, 1); border-color: rgba(0, 0, 0, 0.5);">
-                    <p
-                        style="color: #000000; padding: 0; margin: 0; display: inline-block; max-width: 171px; text-align: start;">
-                        По умолчанию</p>
+            <div class="dropdown search-container__sorting">
+                <button class=" row btn btn-outline-dark dropdown-toggle search-container__sorting-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <p class="search-container__sorting-title">По умолчанию</p>
                 </button>
                 <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="#">Action</a></li>
@@ -175,7 +155,7 @@
                     <p class="footer__nav-info-text">Россия, г. Москва, 119002</p>
                     <p class="footer__nav-info-text">ул. Арбат 51/1/8А</p>
                     <p class="footer__nav-info-text">e-mail: <span>info@lionmax.ru</span></p>
-                    <ul class="footer__list list-unstyled ">
+                    <ul class="footer__list list-unstyled footer__iconc">
                         <li><a class="text-muted" href="#"><img src="images/twitter-3 1.svg" class="footer-social-ico"></a>
                         </li>
                         <li><a class="text-muted" href="#"><img src="images/image 3.svg" class="footer-social-ico"></i></a>
@@ -185,33 +165,39 @@
             </div>
 
             <div class="foot" style="display:flex; justify-content: space-between;">
-                <div class="col">
+                <div class="col footer__column">
                     <h5 class="footer__title">NFT</h5>
                     <ul class="nav flex-column">
-                        <li class=" mb-2"><a href="*"
+                        <li class=" mb-0"><a href="*"
                                 class="nav-link p-0 footer__nav-info-text">Что такое NFT</a>
                         </li>
-                        <li class=" mb-2"><a href="*"
+                        <li class=" mb-0"><a href="*"
                                 class="nav-link p-0 footer__nav-info-text">Создайте NFT с нами</a>
                         </li>
                     </ul>
-                </div>
-                <div class="col">
-                    <h5 class="footer__title">Компания</h5>
-                    <ul class="nav flex-column">
-                        <li class=" mb-2"><a href="*"
-                                class="nav-link p-0  footer__nav-info-text">О нас</a></li>
-                        <li class=" mb-2"><a href="*" class="nav-link p-0 footer__nav-info-text">Отправить запрос</a>
+                    <ul class="footer__list list-unstyled footer__iconc footer__icons_visibility ">
+                        <li><a class="text-muted" href="#"><img src="images/twitter-3 1.svg" class="footer-social-ico"></a>
+                        </li>
+                        <li><a class="text-muted" href="#"><img src="images/image 3.svg" class="footer-social-ico"></i></a>
                         </li>
                     </ul>
                 </div>
-                <div class="col">
+                <div class="col footer__column">
+                    <h5 class="footer__title">Компания</h5>
+                    <ul class="nav flex-column">
+                        <li class=" mb-0"><a href="*"
+                                class="nav-link p-0  footer__nav-info-text">О нас</a></li>
+                        <li class=" mb-0"><a href="*" class="nav-link p-0 footer__nav-info-text">Отправить запрос</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col footer__column">
                     <h5 class="footer__title">Другое</h5>
                     <ul class="nav flex-column">
-                        <li class=" mb-2"><a href="*" class="nav-link p-0 footer__nav-info-text"
+                        <li class=" mb-0"><a href="*" class="nav-link p-0 footer__nav-info-text"
                                 style="white-space: nowrap;">Условия использования</a>
                         </li>
-                        <li class=" mb-2"><a href="*"
+                        <li class=" mb-0"><a href="*"
                                 class="nav-link p-0 footer__nav-info-text">Политика конфиденциальности</a></li>
                     </ul>
                 </div>
