@@ -30,35 +30,135 @@
     <main class="container-lg page__main-container ">
         <div class="row search-container">
             <div class="dropdown  search-container__filters">
-                <button class=" row btn btn-outline-warning dropdown-toggle search-container__filters-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button class=" row btn btn-outline-warning dropdown-toggle search-container__filters-button"
+                    type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <p class="search-container__filters-title">Фильтры</p>
                 </button>
-                <ul class="dropdown-menu">
-                    <li>
-                        <p class="dropdown-item">Категории</p>
-                    </li>
-                    <li>
-                        <p class="dropdown-item">Типы файлов</p>
-                    </li>
-                    <li>
-                        <p class="dropdown-item">Типы продаж</p>
-                    </li>
-                </ul>
+                <form class="dropdown-menu p-4">
+                    <h6 class="dropdown-header search-container__filters-title">Цена</h6>
+                    <div>
+                        <input type="range" class="form-range" min="500" max="1000000" value="500" id="customRange1">
+                        <input type="range" class="form-range" min="500" max="1000000" value="1000000" id="customRange2">
+                    </div>
+                    <h6 class="dropdown-header search-container__filters-title">Категории</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="Premium">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Премиум
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Искусство
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Знаменитости
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Киберспорт
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Благотворительность
+                        </label>
+                    </div>
+                    <h6 class="dropdown-header search-container__filters-title">Типы файлов</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Изображение
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Видео
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Аудио
+                        </label>
+                    </div>
+                    <h6 class="dropdown-header search-container__filters-title">Типы продаж</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Фикс. цена
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Аукцион активен
+                        </label>
+                    </div>
+                    <h6 class="dropdown-header search-container__filters-title">Сеть NFT</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            ETH
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            BNB
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            USDC
+                        </label>
+                    </div>
+                    <h6 class="dropdown-header search-container__filters-title">Редкость</h6>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Уникальная
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Редкая
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Эпическая
+                        </label>
+                    </div>
+                    <button type="submit"
+                        class="btn btn-primary search-container__filters-form-button">Применить</button>
+                </form>
             </div>
             <form class="row search-container__form">
                 <button type="submit" class="btn search-container__form-button"></button>
-                <input type="text" class="form-control search-container__form-input" id="exampleInputPassword1" placeholder="Поиск...">
+                <input type="text" class="form-control search-container__form-input" id="exampleInputPassword1"
+                    placeholder="Поиск...">
             </form>
 
-            <div class="dropdown search-container__sorting">
-                <button class=" row btn btn-outline-dark dropdown-toggle search-container__sorting-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    <p class="search-container__sorting-title">По умолчанию</p>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+            <div class="dropdown btn-group search-container__sorting ">
+                <select class=" row form-select search-container__sorting-button" aria-label="sorting">
+                    <option value="По умолчанию" class="search-container__sorting-title">По умолчанию</option>
+                    <option value="По дате" class="search-container__sorting-title">По дате</option>
+                    <option value="Дешевле" class="search-container__sorting-title">Дешевле</option>
+                    <option value="Дороже" class="search-container__sorting-title">Дороже</option>
+                    <option value="По популярности" class="search-container__sorting-title">По популярности</option>
+                </select>
             </div>
         </div>
         <ul class="container-lg list-group elements">
@@ -156,9 +256,11 @@
                     <p class="footer__nav-info-text">ул. Арбат 51/1/8А</p>
                     <p class="footer__nav-info-text">e-mail: <span>info@lionmax.ru</span></p>
                     <ul class="footer__list list-unstyled footer__iconc">
-                        <li><a class="text-muted" href="#"><img src="images/twitter-3 1.svg" class="footer-social-ico"></a>
+                        <li><a class="text-muted" href="#"><img src="images/twitter-3 1.svg"
+                                    class="footer-social-ico"></a>
                         </li>
-                        <li><a class="text-muted" href="#"><img src="images/image 3.svg" class="footer-social-ico"></i></a>
+                        <li><a class="text-muted" href="#"><img src="images/image 3.svg"
+                                    class="footer-social-ico"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -168,25 +270,24 @@
                 <div class="col footer__column">
                     <h5 class="footer__title">NFT</h5>
                     <ul class="nav flex-column">
-                        <li class=" mb-0"><a href="*"
-                                class="nav-link p-0 footer__nav-info-text">Что такое NFT</a>
+                        <li class=" mb-0"><a href="*" class="nav-link p-0 footer__nav-info-text">Что такое NFT</a>
                         </li>
-                        <li class=" mb-0"><a href="*"
-                                class="nav-link p-0 footer__nav-info-text">Создайте NFT с нами</a>
+                        <li class=" mb-0"><a href="*" class="nav-link p-0 footer__nav-info-text">Создайте NFT с нами</a>
                         </li>
                     </ul>
                     <ul class="footer__list list-unstyled footer__iconc footer__icons_visibility ">
-                        <li><a class="text-muted" href="#"><img src="images/twitter-3 1.svg" class="footer-social-ico"></a>
+                        <li><a class="text-muted" href="#"><img src="images/twitter-3 1.svg"
+                                    class="footer-social-ico"></a>
                         </li>
-                        <li><a class="text-muted" href="#"><img src="images/image 3.svg" class="footer-social-ico"></i></a>
+                        <li><a class="text-muted" href="#"><img src="images/image 3.svg"
+                                    class="footer-social-ico"></i></a>
                         </li>
                     </ul>
                 </div>
                 <div class="col footer__column">
                     <h5 class="footer__title">Компания</h5>
                     <ul class="nav flex-column">
-                        <li class=" mb-0"><a href="*"
-                                class="nav-link p-0  footer__nav-info-text">О нас</a></li>
+                        <li class=" mb-0"><a href="*" class="nav-link p-0  footer__nav-info-text">О нас</a></li>
                         <li class=" mb-0"><a href="*" class="nav-link p-0 footer__nav-info-text">Отправить запрос</a>
                         </li>
                     </ul>
@@ -197,8 +298,8 @@
                         <li class=" mb-0"><a href="*" class="nav-link p-0 footer__nav-info-text"
                                 style="white-space: nowrap;">Условия использования</a>
                         </li>
-                        <li class=" mb-0"><a href="*"
-                                class="nav-link p-0 footer__nav-info-text">Политика конфиденциальности</a></li>
+                        <li class=" mb-0"><a href="*" class="nav-link p-0 footer__nav-info-text">Политика
+                                конфиденциальности</a></li>
                     </ul>
                 </div>
             </div>
