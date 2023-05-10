@@ -36,9 +36,14 @@
                 </button>
                 <form class="dropdown-menu p-4">
                     <h6 class="dropdown-header search-container__filters-title">Цена</h6>
-                    <div>
-                        <input type="range" class="form-range" min="500" max="1000000" value="500" id="customRange1">
-                        <input type="range" class="form-range" min="500" max="1000000" value="1000000" id="customRange2">
+                    <div class="range-slider">
+                        <input value="500" min="500" max="1000000" step="1" type="range">
+                        <input value="1000000" min="500" max="1000000" step="1" type="range">
+                        <div class="rangeValues">
+                            <div class="rangeValue"><span class="rangeValue1"></span></div>
+                            <div class="delimiter"></div>
+                            <div class="rangeValue"><span class="rangeValue2"></span></div>
+                        </div>   
                     </div>
                     <h6 class="dropdown-header search-container__filters-title">Категории</h6>
                     <div class="form-check">
