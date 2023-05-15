@@ -177,12 +177,13 @@
     font-size: 24px;
     line-height: 24px;
     border-radius: 10px;
+    border-color: rgba(0, 0, 0, 0.5);
 }
 
 .search-container__filters-title {
     color: #000000;
     padding: 0;
-    margin: 59px 0 0;
+    margin: 59px 0 25px;
     display: inline-block;
     max-width: 120px;
     text-align: start;
@@ -243,6 +244,12 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+.form-check-input:checked {
+    background-color: #fff;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-image: url(images/Vector.svg);
+}
+
 .search-container__sorting {
     width: 335px;
     height: 40px;
@@ -265,10 +272,19 @@
     font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
-    appearance: none;
+    background-image: url(images/Vector.svg);
 }
 
-.rangeValues{
+option {
+   max-width: 344px; 
+   min-height: 24px;
+}
+.search-container__sorting-title {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.rangeValues {
     display: flex;
     justify-content: space-between;
     position: absolute;
@@ -295,8 +311,9 @@ div.range-slider {
     width: 310px;
     height: 64px;
     text-align: center;
-  }
-  div.range-slider input[type=range] {
+}
+
+div.range-slider input[type=range] {
     position: absolute;
     -webkit-appearance: none;
     border: none;
@@ -311,8 +328,9 @@ div.range-slider {
     margin: 0;
     padding: 0;
     overflow: visible;
-  }
-  div.range-slider input[type=range]::-webkit-slider-thumb {
+}
+
+div.range-slider input[type=range]::-webkit-slider-thumb {
     pointer-events: all;
     position: relative;
     overflow: visible;
@@ -326,13 +344,13 @@ div.range-slider {
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-  }
+}
 
-  div.range-slider input[type=range]:nth-of-type(2)::-webkit-slider-thumb{
+div.range-slider input[type=range]:nth-of-type(2)::-webkit-slider-thumb {
     background-image: url(images/Polygon-right.png);
-  }
+}
 
-  
+
 @media screen and (max-width: 1512px) {
 
     .search-container__filters {
@@ -824,7 +842,7 @@ div.range-slider {
     width: 128px;
     height: 138px;
     position: absolute;
-    left: 45.44%;
+    left:calc(50% - 64px);
     bottom: 3.5%;
     z-index: 1;
 }
@@ -893,10 +911,8 @@ div.range-slider {
     .footer__star {
         width: 66px;
         height: 61px;
-        position: absolute;
-        left: 47.44%;
+        left: calc(50% - 33px);
         bottom: 21.8%;
-        z-index: 1;
     }
 
     .footer__copyright {
