@@ -15,7 +15,7 @@
     <!-- <link rel="stylesheet" href="./index.css"> -->
 </head>
 
-<body class="page">
+<body class="page" style="min-width: 320px;">
     <header class="container-lg row header">
         <img class="header__logo" src="<%=require('./Images/лого.svg')%>" alt="Логотип компании">
         <form class="row header__form">
@@ -34,7 +34,7 @@
                     type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     <p class="search-container__filters-title">Фильтры</p>
                 </button>
-                <form class="dropdown-menu p-4">
+                <form class="dropdown-menu p-4 mt-3">
                     <h6 class="dropdown-header search-container__filters-title">Цена</h6>
                     <div class="range-slider">
                         <input value="500" min="500" max="1000000" step="1" type="range">
@@ -156,8 +156,8 @@
                     placeholder="Поиск...">
             </form>
 
-            <div class="dropdown btn-group search-container__sorting ">
-                <select class=" row form-select search-container__sorting-button" aria-label="sorting">
+            <div class="dropdown-center search-container__sorting">
+                <select class=" row form-select search-container__sorting-button" aria-label="default select">
                     <option value="По умолчанию" class="search-container__sorting-title">По умолчанию</option>
                     <option value="По дате" class="search-container__sorting-title">По дате</option>
                     <option value="Дешевле" class="search-container__sorting-title">Дешевле</option>
